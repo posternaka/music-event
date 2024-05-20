@@ -1,0 +1,78 @@
+:root {
+	/*general-color*/
+	--white: #fff;
+	--dark: #222222;
+	--pink: #ffa3a3;
+	--red: #fc5252;
+	--blue: #381ddb;
+
+	/*additional-color*/
+	--gray: #e0e0e0;
+	--orange: #db841d;
+	--brown: #aa6550;
+	--purple: #c00096;
+	--soft-pink: #ffcdcd;
+	--soft-red: #ffbe9d;
+	--soft-blue: #84c4ff;
+
+	/*bg-color*/
+	--bg-body: var(--white);
+	--bg-section-event: linear-gradient(
+		0deg,
+		var(--white) 0%,
+		rgba(56, 29, 219, 0.05) 100%
+	);
+	--bg-section-shot: linear-gradient(
+		0deg,
+		var(--white) 0%,
+		rgba(252, 82, 82, 0.2) 100%
+	);
+
+	/*font-family*/
+	--family-body: 'Raleway', sans-serif;
+	--family-title: 'Montserrat', sans-serif;
+
+	/*font-color*/
+	--clr-h1-main: var(--white);
+	--clr-h1-optional: var(--pink);
+	--clr-h2-main: var(--dark);
+	--clr-h2-optional: var(--blue);
+	--clr-h3: var(--dark);
+	--clr-h5: var(--dark);
+	--clr-subtitle: var(--dark);
+	--clr-main: var(--dark);
+
+	/*font-size*/
+	--fs-h1: 4.5rem;
+	--fs-h2: 2.125rem;
+	--fs-h3: 1.5rem;
+	--fs-h4: 1.25rem;
+	--fs-subtitle: 1.5rem;
+	--fs-main: 1rem;
+	--fs-small: 0.75rem;
+	--fs-menu: 0.875rem;
+
+	/*font-height*/
+	--fh-h1: auto;
+	--fh-h2: 130%;
+	--fh-h3: 2.375rem;
+	--fh-h4: 1.75rem;
+	--fh-auto: auto;
+	--fh-subtitle: 2.375rem;
+	--fh-main: 1.5rem;
+	--fh-small: 1.125rem;
+	--fh-menu: 1.25rem;
+
+	/*font-weight*/
+	--regular: 400;
+	--semibold: 600;
+	--bold: 700;
+	--extrabold: 800;
+
+	--z-tooltip: 10;
+	--z-fixed: 100;
+	--z-modal: 1000;
+
+	--transition-bg: background-color 0.3s easy-in;
+	--transition-color: color 0.3s easy-in-out;
+}
