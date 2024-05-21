@@ -24,8 +24,8 @@
 	);
 	--bg-section-shot: linear-gradient(
 		0deg,
-		var(--white) 0%,
-		rgba(252, 82, 82, 0.2) 100%
+		rgba(0, 0, 0, 0.2) 0%,
+		rgba(252, 82, 82, 0.4) 100%
 	);
 
 	/*font-family*/
@@ -39,7 +39,7 @@
 	--clr-h2-optional: var(--blue);
 	--clr-h3: var(--dark);
 	--clr-h5: var(--dark);
-	--clr-subtitle: var(--dark);
+	--clr-subtitle: var(--white);
 	--clr-main: var(--dark);
 
 	/*font-size*/
@@ -52,13 +52,13 @@
 	--fs-small: 0.75rem;
 	--fs-menu: 0.875rem;
 
-	/*font-height*/
-	--fh-h1: auto;
+	/*line-height*/
+	--fh-h1: 130%;
 	--fh-h2: 130%;
 	--fh-h3: 2.375rem;
 	--fh-h4: 1.75rem;
 	--fh-auto: auto;
-	--fh-subtitle: 2.375rem;
+	--fh-subtitle: 2rem;
 	--fh-main: 1.5rem;
 	--fh-small: 1.125rem;
 	--fh-menu: 1.25rem;
@@ -75,4 +75,14 @@
 
 	--transition-bg: background-color 0.3s easy-in;
 	--transition-color: color 0.3s easy-in-out;
+}
+
+@media screen and (max-width: 992px) {
+	:root {
+		--fs-h1: 2.8rem;
+		--fs-h2: 1.6rem;
+		--fs-h3: 1.1rem;
+		--fs-h4: 1rem;
+		--fs-subtitle: 1.2rem;
+	}
 }

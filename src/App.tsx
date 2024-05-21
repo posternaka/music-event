@@ -1,5 +1,11 @@
+import Home from '@/components/home';
+
 function App() {
-	return <div>Music Event</div>;
+	return (
+		<div className='app'>
+			<Home />
+		</div>
+	);
 }
 
 export default App;

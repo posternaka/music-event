@@ -1,0 +1,45 @@
+.section {
+	padding-top: 6rem;
+}
+
+.wrapper {
+	height: 100%;
+}
+
+/*layout*/
+.container {
+	max-width: 1170px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.flex {
+	display: flex;
+}
+
+.flex-center {
+	align-items: center;
+	justify-content: center;
+}
+
+.flex-col {
+	flex-direction: column;
+}
+
+/*button*/
+.button {
+	display: inline-block;
+	background-color: var(--blue);
+	color: var(--white);
+	padding: 1.125rem 2.2rem;
+	font-weight: var(--bold);
+	font-size: var(--fs-h4);
+	transition: background-color 0.3s ease-in-out;
+	border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 992px) {
+	.button {
+		padding: 1rem;
+	}
+}
