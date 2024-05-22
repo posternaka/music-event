@@ -1,0 +1,43 @@
+.nav {
+	width: 100%;
+	padding: 1rem 0;
+	background-color: #84c4ff0d;
+	border-bottom-left-radius: 0.5rem;
+	border-bottom-right-radius: 0.5rem;
+	position: fixed;
+	top: 0;
+}
+
+.wrapper__nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 4rem;
+}
+
+.nav__block {
+	gap: 3.125rem;
+}
+
+.nav__list {
+	gap: 2.5rem;
+}
+
+.nav__item {
+	color: var(--white);
+	transition: color 0.3s ease;
+}
+
+.nav__item:hover {
+	color: #efedff;
+}
+
+.button--nav {
+	color: var(--blue);
+	background-color: var(--white);
+}
+
+.button--nav:hover {
+	background-color: #efedff;
+}
+
