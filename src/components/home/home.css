@@ -13,7 +13,7 @@
 	width: 970px;
 	padding: 1rem;
 	margin: 0 auto;
-	backdrop-filter: blur(5px);
+	/* backdrop-filter: blur(5px); */
 	border-radius: 1rem;
 }
 

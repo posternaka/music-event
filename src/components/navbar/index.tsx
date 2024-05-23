@@ -4,27 +4,12 @@ import '@/components/navbar/navbar.css';
 type Props = {};
 
 const Navbar = (props: Props) => {
-	const toggleMenuBurger = (): void => {
-    const menuBurger = document.querySelector('.menu__burger') as HTMLElement | null;
-    const item1 = menuBurger?.querySelector('.menu__item-1') as HTMLElement | null;
-    const item2 = menuBurger?.querySelector('.menu__item-2') as HTMLElement | null;
-    const item3 = menuBurger?.querySelector('.menu__item-3') as HTMLElement | null;
+	const handleToggleMenuBurger = () => {
+		console.log('da');
 
-    menuBurger?.addEventListener('click', () => {
-        if (item2) {
-            item2.style.opacity = '0';
-            item2.style.transform = 'translateX(-50px)';
-        }
-
-        if (item1) {
-            item1.style.transform = 'rotate(45deg)';
-        }
-
-        if (item3) {
-            item3.style.transform = 'rotate(-45deg)';
-        }
-    });
-};
+		const menu = document.querySelector('.nav__mobile');
+		menu?.classList.toggle('nav__mobile--open');
+	};
 
 	return (
 		<nav className='nav'>
@@ -50,7 +35,35 @@ const Navbar = (props: Props) => {
 
 						<button className='button button--nav'>GET TICKETS</button>
 					</div>
+
+					<div
+						className='menu__burger flex flex-center flex-mobile'
+						onClick={() => handleToggleMenuBurger()}
+					>
+						<div className='menu__item menu__item--1'></div>
+						<div className='menu__item menu__item--2'></div>
+						<div className='menu__item menu__item--3'></div>
+					</div>
 				</div>
+			</div>
+
+			<div className='nav__mobile flex flex-mobile'>
+				<div className='nav__list flex flex-center flex-mobile'>
+					<a href='#home' className='nav__item'>
+						home
+					</a>
+					<a href='#speakers' className='nav__item'>
+						speakers
+					</a>
+					<a href='#schedule' className='nav__item'>
+						schedule
+					</a>
+					<a href='#contactUs' className='nav__item'>
+						contact Us
+					</a>
+				</div>
+
+				<button className='button button--nav'>GET TICKETS</button>
 			</div>
 		</nav>
 	);
