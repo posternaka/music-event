@@ -32,6 +32,10 @@
 	color: #efedff;
 }
 
+.logo {
+	width: 8rem;
+}
+
 .button--nav {
 	color: var(--blue);
 	background-color: var(--white);
@@ -57,6 +61,12 @@
 
 .flex-mobile {
 	flex-direction: column;
+}
+
+.nav__close-icon {
+	font-size: var(--fs-subtitle);
+	align-self: self-end;
+	cursor: pointer;
 }
 
 .menu__burger {
@@ -88,5 +98,21 @@
 
 	.nav__block {
 		display: none;
+	}
+
+	.logo {
+		width: 5rem;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.menu__burger {
+		width: 30px;
+		height: 30px;
+		gap: 3px;
+	}
+
+	.menu__item {
+		width: 15px;
 	}
 }

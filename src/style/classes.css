@@ -50,3 +50,10 @@
 		padding: 1rem;
 	}
 }
+
+@media screen and (max-width: 576px) {
+	.container {
+		max-width: auto;
+		padding: 0 2rem;
+	}
+}

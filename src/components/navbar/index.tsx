@@ -1,15 +1,11 @@
 import EventLogo from '@/assets/event-logo.svg';
 import '@/components/navbar/navbar.css';
+import { useState } from 'react';
 
 type Props = {};
 
 const Navbar = (props: Props) => {
-	const handleToggleMenuBurger = () => {
-		console.log('da');
-
-		const menu = document.querySelector('.nav__mobile');
-		menu?.classList.toggle('nav__mobile--open');
-	};
+	const [isPopup, setIsPopup] = useState(false);
 
 	return (
 		<nav className='nav'>
@@ -38,7 +34,7 @@ const Navbar = (props: Props) => {
 
 					<div
 						className='menu__burger flex flex-center flex-mobile'
-						onClick={() => handleToggleMenuBurger()}
+						onClick={() => setIsPopup(true)}
 					>
 						<div className='menu__item menu__item--1'></div>
 						<div className='menu__item menu__item--2'></div>
@@ -47,8 +43,17 @@ const Navbar = (props: Props) => {
 				</div>
 			</div>
 
-			<div className='nav__mobile flex flex-mobile'>
+			<div
+				className={
+					isPopup
+						? 'nav__mobile flex flex-mobile nav__mobile--open'
+						: 'nav__mobile flex flex-mobile'
+				}
+			>
 				<div className='nav__list flex flex-center flex-mobile'>
+					<p className='nav__close-icon' onClick={() => setIsPopup(false)}>
+						&#x2715;
+					</p>
 					<a href='#home' className='nav__item'>
 						home
 					</a>
