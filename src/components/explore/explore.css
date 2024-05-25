@@ -1,0 +1,82 @@
+.explore__title {
+	font-size: var(--fs-h1);
+	line-height: var(--fh-h1);
+	font-weight: var(--bold);
+	margin-bottom: 3.75rem;
+}
+
+.explore__title--color {
+	color: var(--blue);
+}
+
+.explore__cards {
+	gap: 30px;
+	margin-left: 1.5px;
+	margin-right: 1.5px;
+	flex-wrap: wrap;
+}
+
+.explore__item {
+	padding-top: 5.6rem;
+	padding-bottom: 2.25rem;
+	padding-left: 3.75rem;
+	padding-right: 7.5rem;
+	width: 370px;
+	border-radius: 1.5rem;
+	cursor: pointer;
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.explore__item:hover {
+	background-color: #381ddb80;
+	color: var(--white);
+}
+
+.explore__icon {
+	width: 40px;
+	height: 40px;
+	margin-bottom: 1.8rem;
+}
+
+.explore__item .item__title {
+	font-size: var(--fs-h3);
+	line-height: var(--fh-h3);
+	font-weight: var(--semibold);
+	margin-bottom: 1.25rem;
+}
+
+.explore__item .item__description {
+	font-size: var(--fs-subtitle);
+	line-height: var(--fh-subtitle);
+	opacity: 0.7;
+}
+
+.explore__item--1 {
+	background-color: #ffbe9d30;
+}
+
+.explore__item--2 {
+	background-color: #ffa3a330;
+}
+
+.explore__item--3 {
+	background-color: #c0009630;
+}
+
+.explore__item--4 {
+	background-color: #ffcdcd30;
+}
+
+.explore__item--5 {
+	background-color: #84c4ff30;
+}
+
+@media screen and (max-width: 576px) {
+	.explore__item {
+		width: 80%;
+		padding-top: 2.25rem;
+		padding-bottom: 2.25rem;
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+	}
+}
