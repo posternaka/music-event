@@ -10,6 +10,16 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 type Props = {};
 
 const Explore = (props: Props) => {
+	const handlerCheckAdaptive = () => {
+		if(window.innerWidth >= 1279) {
+			return 3
+		} else if (window.innerWidth <= 580) {
+			return 1;
+		} else {
+			return 2;
+		}
+	}
+
 	return (
 		<section className='section'>
 			<div className='container'>
@@ -17,7 +27,7 @@ const Explore = (props: Props) => {
 					<span className='explore__title--color'>Explore</span> By Category
 				</h2>
 				<div className='explore__cards flex flex-center'>
-					<Swiper spaceBetween={20} slidesPerView={3} loop={true}>
+					<Swiper spaceBetween={20} slidesPerView={'auto'} loop={true}>
 						<SwiperSlide>
 							<div className='explore__item explore__item--1'>
 								<img

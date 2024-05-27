@@ -71,9 +71,13 @@
 	background-color: #84c4ff30;
 }
 
+.swiper-slide {
+	flex-shrink: 1 !important;
+}
+
 @media screen and (max-width: 576px) {
 	.explore__item {
-		width: 80%;
+		width: 280px;
 		padding-top: 2.25rem;
 		padding-bottom: 2.25rem;
 		padding-left: 1.5rem;
