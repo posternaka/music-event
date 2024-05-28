@@ -1,5 +1,6 @@
 .section {
-	padding-top: 6rem;
+	padding-top: 7.5rem;
+	padding-bottom: 7.5rem;
 }
 
 .wrapper {
@@ -38,6 +39,24 @@
 	border-radius: 0.5rem;
 }
 
+/*text*/
+.title {
+	font-size: var(--fs-h1);
+	line-height: var(--fh-h1);
+	font-weight: var(--bold);
+	margin-bottom: 3.75rem;
+}
+
+.title--color {
+	color: var(--blue);
+}
+
+.text {
+	font-size: var(--fs-subtitle);
+	line-height: var(--fh-subtitle);
+	opacity: 0.7;
+}
+
 @media screen and (max-width: 1280px) {
 	.container {
 		max-width: auto;
@@ -46,12 +65,22 @@
 }
 
 @media screen and (max-width: 992px) {
+	.section {
+		padding-top: 5rem;
+		padding-bottom: 5rem;
+	}
+
 	.button {
 		padding: 1rem;
 	}
 }
 
 @media screen and (max-width: 576px) {
+	.section {
+		padding-top: 4rem;
+		padding-bottom: 4rem;
+	}
+
 	.container {
 		max-width: auto;
 		padding: 0 2rem;

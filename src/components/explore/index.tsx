@@ -23,8 +23,8 @@ const Explore = (props: Props) => {
 	return (
 		<section className='section'>
 			<div className='container'>
-				<h2 className='explore__title'>
-					<span className='explore__title--color'>Explore</span> By Category
+				<h2 className='title'>
+					<span className='title--color'>Explore</span> By Category
 				</h2>
 				<div className='explore__cards flex flex-center'>
 					<Swiper spaceBetween={20} slidesPerView={'auto'} loop={true}>
@@ -36,7 +36,7 @@ const Explore = (props: Props) => {
 									className='explore__icon'
 								/>
 								<p className='item__title'>Pop</p>
-								<p className='item__description'>
+								<p className='text'>
 									Duis nec sodales nibh. Proin lectus tortor, rutrum vel
 									vulputate vitae
 								</p>
@@ -51,7 +51,7 @@ const Explore = (props: Props) => {
 									className='explore__icon'
 								/>
 								<p className='item__title'>Folk</p>
-								<p className='item__description'>
+								<p className='text'>
 									Duis nec sodales nibh. Proin lectus tortor, rutrum vel
 									vulputate vitae
 								</p>
@@ -66,7 +66,7 @@ const Explore = (props: Props) => {
 									className='explore__icon'
 								/>
 								<p className='item__title'>Instrumental</p>
-								<p className='item__description'>
+								<p className='text'>
 									Duis nec sodales nibh. Proin lectus tortor, rutrum vel
 									vulputate vitae
 								</p>
@@ -81,7 +81,7 @@ const Explore = (props: Props) => {
 									className='explore__icon'
 								/>
 								<p className='item__title'>Rock</p>
-								<p className='item__description'>
+								<p className='text'>
 									Duis nec sodales nibh. Proin lectus tortor, rutrum vel
 									vulputate vitae
 								</p>
@@ -96,7 +96,7 @@ const Explore = (props: Props) => {
 									className='explore__icon'
 								/>
 								<p className='item__title'>Jazz</p>
-								<p className='item__description'>
+								<p className='text'>
 									Duis nec sodales nibh. Proin lectus tortor, rutrum vel
 									vulputate vitae
 								</p>
