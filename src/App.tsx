@@ -2,6 +2,7 @@ import About from '@/components/about';
 import Explore from '@/components/explore';
 import Home from '@/components/home';
 import Navbar from '@/components/navbar';
+import Singers from './components/singers';
 
 function App() {
 	return (
@@ -10,6 +11,7 @@ function App() {
 			<Home />
 			<Explore />
 			<About />
+			<Singers />
 		</div>
 	);
 }

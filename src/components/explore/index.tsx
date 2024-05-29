@@ -10,16 +10,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 type Props = {};
 
 const Explore = (props: Props) => {
-	const handlerCheckAdaptive = () => {
-		if(window.innerWidth >= 1279) {
-			return 3
-		} else if (window.innerWidth <= 580) {
-			return 1;
-		} else {
-			return 2;
-		}
-	}
-
 	return (
 		<section className='section'>
 			<div className='container'>
