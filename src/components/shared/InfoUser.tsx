@@ -19,7 +19,7 @@ interface InfoType {
 
 type Info = InfoType[][];
 
-export const Info: Info = [
+export const scheduleInfo: Info = [
 	[
 		{
 			time: '11:00 AM to 12:00 PM',

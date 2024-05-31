@@ -1,5 +1,6 @@
 import '@/components/schedule/schedule.css';
 import { useState } from 'react';
+import { scheduleInfo } from '../shared/InfoUser';
 
 type Props = {};
 
@@ -41,42 +42,50 @@ const Schedule = (props: Props) => {
 									</div>
 								))}
 						</div>
+
 						<div className='schedule__table flex'>
-							<div className='table__header grid__table'>
+							<div className='table__header grid__table grid__table--open'>
 								<p>Time</p>
 								<p>Content</p>
 								<p>Speakers</p>
 								<p></p>
 							</div>
-							<th></th>
-
-							<div className='table__body grid__table'>
-								<p>03:00 PM to 04:00 PM</p>
-								<p>
-									Vestibulum vel eros vel metus lacinia feugiat a nec metus.{' '}
-								</p>
-								<div className='table__user-list flex'>
-									<div className='table__user-info flex'>
-										<img src={photo4} alt='photo' />
-										<div>
-											<p className='table__name'>Sasha Jackson</p>
-											<p>
-												Booth: <span className='table__place'>2F18</span>
-											</p>
+							{scheduleInfo &&
+								scheduleInfo.map((tab, indexTab) =>
+									tab.map((info, indexInfo) => (
+										<div
+											key={info.record + indexInfo}
+											className={
+												isActive === indexTab + 1
+													? 'table__body grid__table grid__table--open'
+													: 'table__body grid__table'
+											}
+										>
+											<p>{info.time}</p>
+											<p>{info.description}</p>
+											<div className='table__user-list flex'>
+												{info.user.map((userInfo, indexUser) => (
+													<div
+														key={userInfo.name + indexUser}
+														className='table__user-info flex'
+													>
+														<img src={userInfo.img} alt='photo' />
+														<div>
+															<p className='table__name'>{userInfo.name}</p>
+															<p>
+																Booth:{' '}
+																<span className='table__place'>
+																	{userInfo.place}
+																</span>
+															</p>
+														</div>
+													</div>
+												))}
+											</div>
+											<p className='table__record'>{info.record}</p>
 										</div>
-									</div>
-									<div className='table__user-info flex'>
-										<img src={photo5} alt='photo' />
-										<div>
-											<p className='table__name'>Diana Brock</p>
-											<p>
-												Booth: <span className='table__place'>2F24</span>
-											</p>
-										</div>
-									</div>
-								</div>
-								<p className='table__record'>Upcoming</p>
-							</div>
+									))
+								)}
 						</div>
 					</div>
 				</div>

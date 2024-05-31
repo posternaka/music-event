@@ -59,7 +59,7 @@
 }
 
 .grid__table {
-	display: grid;
+	display: none;
 	grid-template-columns: minmax(0, 230px) minmax(0, 370px) minmax(0, 270px) minmax(
 			0,
 			160px
@@ -68,20 +68,20 @@
 	gap: 1.5rem;
 }
 
+.grid__table--open {
+	display: grid;
+}
+
 .table__header {
 	background-color: #381ddb0d;
 	font-size: var(--fs-subtitle);
 	font-weight: var(--bold);
+	border-bottom: 1px solid #22222220;
 }
 
-th {
-	background: #22222220;
-	height: 1px;
-	width: 100%;
-}
-
-.table__body {
+.table__body:not(:last-child) {
 	font-size: var(--fs-main);
+	border-bottom: 1px solid #22222220;
 }
 
 .table__description,
@@ -93,6 +93,7 @@ th {
 
 .table__user-info {
 	gap: 1rem;
+	align-items: flex-start;
 }
 
 .table__place {
@@ -102,4 +103,19 @@ th {
 .table__user-list {
 	flex-direction: column;
 	gap: 0.5rem;
+}
+
+.open__tab {
+	display: flex;
+}
+
+/*breakpoints*/
+@media screen and (max-width: 992px) {
+	.grid__table {
+		grid-template-columns: none;
+	}
+
+	.table__header p {
+		display: none;
+	}
 }
