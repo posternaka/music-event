@@ -1,14 +1,32 @@
 import EventLogo from '@/assets/event-logo.svg';
 import '@/components/navbar/navbar.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 type Props = {};
 
 const Navbar = (props: Props) => {
 	const [isPopup, setIsPopup] = useState(false);
 
+	const [scrolled, setScrolled] = useState(false);
+
+	useEffect(() => {
+		const handleScroll = () => {
+			if (window.scrollY === 0) {
+				setScrolled(false);
+			} else {
+				setScrolled(true);
+			}
+		};
+
+		window.addEventListener('scroll', handleScroll);
+
+		return () => {
+			window.removeEventListener('scroll', handleScroll);
+		};
+	}, []);
+
 	return (
-		<nav className='nav'>
+		<nav className={scrolled ? 'nav nav--scroll' : 'nav'}>
 			<div className='container'>
 				<div className='wrapper wrapper__nav'>
 					<img src={EventLogo} alt='event-logo' className='logo' />
