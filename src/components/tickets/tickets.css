@@ -1,0 +1,106 @@
+.title--tickets {
+	text-align: center;
+}
+
+.ticket__block {
+	gap: 1.8rem;
+}
+
+.ticket__item {
+	width: 100%;
+	padding: 1.6rem 1.8rem;
+	font-size: var(--fs-main);
+	line-height: var(--fh-main);
+	flex-direction: column;
+	gap: 2rem;
+	border-radius: 1.25rem;
+	box-shadow: 0 6px 14px 10px #2222220f;
+	overflow: hidden;
+	scale: 1;
+	transition: scale 0.3s ease, opacity 0.3s ease, filter 0.3s ease;
+}
+
+.ticket__info {
+	gap: 1rem;
+}
+
+.ticket__item-color-1 {
+	color: var(--dark);
+}
+
+.ticket__item-color-2 {
+	color: var(--blue);
+}
+
+.ticket__item-color-3 {
+	color: var(--red);
+}
+
+.ticket__border-1 {
+	border-top: 6px solid var(--dark);
+}
+
+.ticket__border-2 {
+	border-top: 6px solid var(--blue);
+}
+
+.ticket__border-3 {
+	border-top: 6px solid var(--red);
+}
+
+.ticket__item-title {
+	font-size: var(--fs-h3);
+	line-height: var(--fh-h3);
+	font-weight: var(--bold);
+}
+
+.ticket__cost {
+	font-size: var(--fs-h1);
+	line-height: var(--fh-h1);
+	font-weight: var(--bold);
+	margin-bottom: 1rem;
+}
+
+.button--ticket {
+	background-color: transparent;
+	border: 1px solid var(--blue);
+	color: var(--blue);
+	font-weight: var(--bold);
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button--ticket:hover {
+	background-color: var(--blue);
+	color: var(--white);
+}
+
+.ticket__seat,
+.ticket__wifi,
+.ticket__food {
+	color: var(--dark);
+}
+
+.ticket__text-line-through {
+	text-decoration: line-through;
+	color: #22222280;
+}
+
+.ticket__item:hover {
+	scale: 1.1;
+}
+
+.ticket__block:has(.ticket__item:hover) .ticket__item:not(.ticket__item:hover) {
+	scale: 0.9;
+	opacity: 0.8;
+	filter: blur(0.5rem);
+}
+
+@media screen and (max-width: 991px) {
+	.ticket__block {
+		flex-direction: column;
+	}
+
+	.ticket__item {
+		padding: 1rem 1.2rem;
+	}
+}

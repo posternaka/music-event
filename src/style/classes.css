@@ -39,10 +39,21 @@
 	border-radius: 0.5rem;
 }
 
+.button--main {
+	display: inline-flex;
+	background-color: var(--blue);
+	gap: 0.6rem;
+	transition: background-color 0.3s ease;
+}
+
+.button--main:hover {
+	background-color: #210f86;
+}
+
 /*text*/
 .title {
-	font-size: var(--fs-h1);
-	line-height: var(--fh-h1);
+	font-size: var(--fs-h2);
+	line-height: var(--fh-h2);
 	font-weight: var(--bold);
 	margin-bottom: 3.75rem;
 }

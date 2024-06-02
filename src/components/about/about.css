@@ -14,17 +14,6 @@
 	min-width: 530px;
 }
 
-.button--main {
-	display: inline-flex;
-	background-color: var(--blue);
-	gap: 0.6rem;
-	transition: background-color 0.3s ease;
-}
-
-.button--main:hover {
-	background-color: #210f86;
-}
-
 .arrow-right {
 	transition: transform 0.3s ease-out;
 }

@@ -112,6 +112,10 @@
 
 /*breakpoints*/
 @media screen and (max-width: 992px) {
+	.section__schedule {
+		height: 100%;
+	}
+
 	.grid__table {
 		grid-template-columns: none;
 	}
