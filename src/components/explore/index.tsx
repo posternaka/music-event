@@ -11,7 +11,7 @@ type Props = {};
 
 const Explore = (props: Props) => {
 	return (
-		<section className='section'>
+		<section className='section' id='explore'>
 			<div className='container'>
 				<h2 className='title'>
 					<span className='title--color'>Explore</span> By Category
