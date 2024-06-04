@@ -1,3 +1,7 @@
+.section__sponsors {
+	overflow: hidden;
+}
+
 .title--sponsors {
 	text-align: center;
 }

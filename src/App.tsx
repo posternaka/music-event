@@ -5,6 +5,7 @@ import Navbar from '@/components/navbar';
 import Schedule from '@/components/schedule';
 import Singers from '@/components/singers';
 import Sponsors from '@/components/sponsors';
+import Testimonials from '@/components/testimonials';
 import Tickets from '@/components/tickets';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
 			<Schedule />
 			<Tickets />
 			<Sponsors />
+			<Testimonials />
 		</div>
 	);
 }
