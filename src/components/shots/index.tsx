@@ -10,7 +10,7 @@ type Props = {};
 
 const Shots = (props: Props) => {
 	const flickityOptions = {
-		groupCells: 3,
+		groupCells: checkWidthOnThePage(),
 		lazyLoad: true,
 		wrapAround: true,
 		pageDots: false,
@@ -18,44 +18,20 @@ const Shots = (props: Props) => {
 		prevNextButtons: true,
 	};
 
+	function checkWidthOnThePage() {
+		if (window.innerWidth >= 1440) return 3;
+		if (window.innerWidth <= 992) return 1;
+		else {
+			return 2;
+		}
+	}
+
 	return (
 		<section className='section section--shots'>
 			<div className='container'>
 				<h2 className='title'>See our Best Shots</h2>
 			</div>
 			<div className='shots__slider'>
-				{/* <div className='shots__arrows flex'>
-					<div className='shots__arrow flex flex-center'>
-						<svg
-							width='12'
-							height='19'
-							viewBox='0 0 12 19'
-							fill='none'
-							xmlns='http://www.w3.org/2000/svg'
-						>
-							<path
-								d='M4.51482 9.15569L11.4448 16.0857L9.46522 18.0653L0.555625 9.15569L9.46523 0.246094L11.4448 2.22569L4.51482 9.15569Z'
-								fill='#222222'
-							/>
-						</svg>
-					</div>
-
-					<div className='shots__arrow flex flex-center'>
-						<svg
-							width='12'
-							height='19'
-							viewBox='0 0 12 19'
-							fill='none'
-							xmlns='http://www.w3.org/2000/svg'
-						>
-							<path
-								d='M7.48615 9.15534L0.556152 2.22534L2.53575 0.245739L11.4454 9.15534L2.53575 18.0649L0.556152 16.0853L7.48615 9.15534Z'
-								fill='#222222'
-							/>
-						</svg>
-					</div>
-				</div> */}
-
 				<Flickity
 					elementType={'div'}
 					options={flickityOptions}
