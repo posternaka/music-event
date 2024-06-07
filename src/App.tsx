@@ -1,4 +1,5 @@
 import About from '@/components/about';
+import ContactUs from '@/components/contactUs';
 import Explore from '@/components/explore';
 import Home from '@/components/home';
 import Navbar from '@/components/navbar';
@@ -22,6 +23,7 @@ function App() {
 			<Sponsors />
 			<Testimonials />
 			<Shots />
+			<ContactUs />
 		</div>
 	);
 }

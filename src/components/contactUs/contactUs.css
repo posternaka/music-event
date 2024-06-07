@@ -1,0 +1,41 @@
+.contact__block {
+	width: 40%;
+	background-color: var(--blue);
+	color: var(--white);
+	padding: 7.5rem 11rem 13rem 5rem;
+}
+
+.title__contact {
+	margin-bottom: 0.5rem;
+}
+
+.contact__subtitle {
+	font-size: var(--fs-subtitle);
+	line-height: var(--fh-subtitle);
+	font-weight: var(--regular);
+	margin-bottom: 5rem;
+	opacity: 0.7;
+}
+
+.contact__info {
+	gap: 2.5rem;
+}
+
+.link__contact {
+	font-size: var(--fs-h5);
+	font-weight: var(--bold);
+}
+
+.contact__box {
+	align-items: center;
+}
+
+.contact-icon {
+	padding: 0.5rem;
+	width: 2.5rem;
+	height: 2.5rem;
+}
+
+.form__block {
+	width: 60%;
+}
