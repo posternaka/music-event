@@ -8,7 +8,7 @@ type Props = {};
 const ContactUs = (props: Props) => {
 	return (
 		<section className='section section__contact'>
-			<div className='flex'>
+			<div className='wrapper__contact flex'>
 				<div className='contact__block'>
 					<h2 className='title title__contact'>Contact us</h2>
 					<h3 className='contact__subtitle'>
@@ -16,42 +16,74 @@ const ContactUs = (props: Props) => {
 					</h3>
 					<div className='contact__info flex flex-col'>
 						<div className='contact__box flex'>
-							<img
-								src={Phone}
-								alt='icon-phone'
-								className='flex flex-center contact-icon'
-							/>
-							<a href='tel:+923336527366' className='link link__contact'>
-								+92 333 6527366
+							<a
+								href='tel:+923336527366'
+								className='link link__contact flex flex-center'
+							>
+								<img src={Phone} alt='icon-phone' className='contact-icon' />
+								<span>+92 333 6527366</span>
 							</a>
 						</div>
 
 						<div className='contact__box flex'>
-							<img
-								src={Mail}
-								alt='icon-mail'
-								className='flex flex-center contact-icon'
-							/>
 							<a
 								href='mailto:abuzer@greelogix.com'
-								className='link link__contact'
+								className='link link__contact flex flex-center'
 							>
-								abuzer@greelogix.com
+								<img src={Mail} alt='icon-mail' className='contact-icon' />
+								<span>abuzer@greelogix.com</span>
 							</a>
 						</div>
 						<div className='contact__box flex'>
-							<img
-								src={Point}
-								alt='icon-map'
-								className='flex flex-center contact-icon'
-							/>
-							<address className='link__contact'>
-								Plot 252, Block L Phase 2 Johar Town, Lahore, PK
+							<address className='link__contact flex flex-center'>
+								<img src={Point} alt='icon-map' className='contact-icon' />
+								<span>Plot 252, Block L Phase 2 Johar Town, Lahore, PK</span>
 							</address>
 						</div>
 					</div>
 				</div>
-				<div className='form__block'></div>
+				<div className='form__block flex'>
+					<form action='' method='post' className='form flex flex-col'>
+						<p className='form__title'>Fill in your details</p>
+
+						<div className='form__inputs flex flex-col'>
+							<label htmlFor='name'>
+								<span className='form__attribute'>Name</span>
+								<input
+									type='text'
+									name='name'
+									id='name'
+									placeholder='Michael Carrick'
+									className='form__input'
+								/>
+							</label>
+							<label htmlFor='email'>
+								<span className='form__attribute'>Email</span>
+								<input
+									type='email'
+									name='email'
+									id='email'
+									placeholder='m.carrick@gmail.com'
+									className='form__input'
+								/>
+							</label>
+							<label htmlFor='message'>
+								<span className='form__attribute'>Message</span>
+								<textarea
+									name='message'
+									id='message'
+									placeholder='This makes me delighted. I am ready to offer you cooperation.'
+									className='form__input form__message'
+									maxLength={100}
+								></textarea>
+							</label>
+						</div>
+
+						<button type='submit' className='button button--main'>
+							Submit
+						</button>
+					</form>
+				</div>
 			</div>
 		</section>
 	);
