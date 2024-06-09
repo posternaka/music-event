@@ -9,6 +9,7 @@ import Singers from '@/components/singers';
 import Sponsors from '@/components/sponsors';
 import Testimonials from '@/components/testimonials';
 import Tickets from '@/components/tickets';
+import Footer from '@/components/footer';
 
 function App() {
 	return (
@@ -24,6 +25,7 @@ function App() {
 			<Testimonials />
 			<Shots />
 			<ContactUs />
+			<Footer />
 		</div>
 	);
 }
