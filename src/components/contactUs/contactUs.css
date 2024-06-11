@@ -7,6 +7,9 @@
 	background-color: var(--blue);
 	color: var(--white);
 	padding: 7.5rem 11rem 13rem 5rem;
+	background-image: url('@/assets/contact/info-decor.png');
+	background-repeat: no-repeat;
+	background-position: 100% 100%;
 }
 
 .title__contact {
@@ -43,6 +46,10 @@
 .form__block {
 	width: 55%;
 	align-items: center;
+	background-color: #e0e0e020;
+	background-image: url('@/assets/contact/form-decor.png');
+	background-repeat: no-repeat;
+	background-position: 90% 100%;
 }
 
 .form {
@@ -76,6 +83,7 @@
 	font-size: var(--fs-subtitle);
 	line-height: var(--fsh-subtitle);
 	outline: none;
+	background-color: transparent;
 	border: none;
 	border-bottom: 1px solid var(--gray);
 	transition: border-bottom 0.3s ease, color 0.3s ease;
