@@ -12,7 +12,7 @@ type Props = {};
 
 const Sponsors = (props: Props) => {
 	return (
-		<section className='section section__sponsors'>
+		<section id='sponsors' className='section section__sponsors'>
 			<div className='container'>
 				<div className='wrapper flex flex-center flex-col'>
 					<h2 className='title title--sponsors'>Our Sponsors</h2>

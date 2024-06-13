@@ -4,7 +4,7 @@ type Props = {};
 
 const Tickets = (props: Props) => {
 	return (
-		<section className='section'>
+		<section id='ticket' className='section'>
 			<div className='container'>
 				<div className='wrapper'>
 					<h2 className='title title--tickets'>

@@ -19,7 +19,7 @@ const Schedule = (props: Props) => {
 	const [isActive, setIsActive] = useState<number>(1);
 
 	return (
-		<section className='section section__schedule'>
+		<section id='event' className='section section__schedule'>
 			<div className='container'>
 				<div className='wrapper wrapper__schedule'>
 					<h2 className='title title--schedule'>Event Schedule</h2>

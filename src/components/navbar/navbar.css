@@ -19,18 +19,19 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	gap: 4rem;
+	gap: 2rem;
 }
 
 .nav__block {
-	gap: 3.125rem;
+	gap: 2rem;
 }
 
 .nav__list {
-	gap: 2.5rem;
+	gap: 1rem;
 }
 
 .nav__item {
+	font-size: 0.75rem;
 	color: var(--white);
 	transition: color 0.3s ease;
 }

@@ -36,14 +36,29 @@ const Navbar = (props: Props) => {
 							<a href='#home' className='nav__item'>
 								home
 							</a>
-							<a href='#speakers' className='nav__item'>
-								speakers
+							<a href='#explore' className='nav__item'>
+								explore
 							</a>
-							<a href='#schedule' className='nav__item'>
-								schedule
+							<a href='#about' className='nav__item'>
+								about
 							</a>
-							<a href='#contactUs' className='nav__item'>
-								contact Us
+							<a href='#singers' className='nav__item'>
+								singers
+							</a>
+							<a href='#event' className='nav__item'>
+								event
+							</a>
+							<a href='#ticket' className='nav__item'>
+								ticket
+							</a>
+							<a href='#sponsors' className='nav__item'>
+								sponsors
+							</a>
+							<a href='#testimonials' className='nav__item'>
+								testimonials
+							</a>
+							<a href='#contact' className='nav__item'>
+								contact
 							</a>
 						</div>
 
@@ -75,14 +90,29 @@ const Navbar = (props: Props) => {
 					<a href='#home' className='nav__item'>
 						home
 					</a>
-					<a href='#speakers' className='nav__item'>
-						speakers
+					<a href='#explore' className='nav__item'>
+						explore
 					</a>
-					<a href='#schedule' className='nav__item'>
-						schedule
+					<a href='#about' className='nav__item'>
+						about
 					</a>
-					<a href='#contactUs' className='nav__item'>
-						contact Us
+					<a href='#singers' className='nav__item'>
+						singers
+					</a>
+					<a href='#event' className='nav__item'>
+						event
+					</a>
+					<a href='#ticket' className='nav__item'>
+						ticket
+					</a>
+					<a href='#sponsors' className='nav__item'>
+						sponsors
+					</a>
+					<a href='#testimonials' className='nav__item'>
+						testimonials
+					</a>
+					<a href='#contact' className='nav__item'>
+						contact
 					</a>
 				</div>
 

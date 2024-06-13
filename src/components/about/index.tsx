@@ -6,7 +6,7 @@ type Props = {};
 
 const About = (props: Props) => {
 	return (
-		<section className='section'>
+		<section id='about' className='section'>
 			<div className='container'>
 				<div className='wrapper wrapper__about flex flex-center'>
 					<div className='about__block-img'>
@@ -25,7 +25,7 @@ const About = (props: Props) => {
 
 						<button className='button button--main flex-center'>
 							Learn More
-							<img src={ArrowRight} alt='arrow-right' className='arrow-right'/>
+							<img src={ArrowRight} alt='arrow-right' className='arrow-right' />
 						</button>
 					</div>
 				</div>

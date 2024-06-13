@@ -17,7 +17,7 @@ const Testimonials = (props: Props) => {
 	};
 
 	return (
-		<section className='section'>
+		<section id='testimonials' className='section'>
 			<div className='wrapper'>
 				<h2 className='title title--testimonials'>Testimonials</h2>
 

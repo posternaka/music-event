@@ -6,7 +6,7 @@ type Props = {};
 
 const Singers = (props: Props) => {
 	return (
-		<section className='section'>
+		<section id='singers' className='section'>
 			<div className='container'>
 				<div className='wrapper wrapper__singers flex flex-center'>
 					<div className='singers__content'>
